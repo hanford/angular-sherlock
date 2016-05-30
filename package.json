@@ -1,6 +1,6 @@
 {
   "name": "angular-sherlock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "an angular 1.X directive for using sherlockjs",
   "main": "index.js",
   "scripts": {
