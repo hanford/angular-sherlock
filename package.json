@@ -1,0 +1,26 @@
+{
+  "name": "angular-sherlock",
+  "version": "1.0.0",
+  "description": "an angular 1.X directive for using sherlockjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/karma start",
+    "watch": "watchify ./website/app.js -d -o ./website/built.js -v"
+  },
+  "keywords": [
+    "angular",
+    "sherlock",
+    "watson",
+    "angular sherlock"
+  ],
+  "author": "Jack Hanford <jackhanford@gmail.com> (http://jackhanford.com)",
+  "license": "MIT",
+  "dependencies": {
+    "sherlockjs": "0.0.9"
+  },
+  "devDependencies": {
+    "angular": "~1.5.5",
+    "browserify": "~13.0.1",
+    "watchify": "~3.7.0"
+  }
+}

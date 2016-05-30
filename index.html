@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>sherlock test</title>
+    <style>
+      html,
+      body {
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        width: 100%;
+        font-family: sans-serif;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .example {
+        margin: 8px 0;
+      }
+
+      .sherlock-input {
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #DDD;
+        border-radius: 3px;
+        width: 300px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body ng-app="exampleApp" ng-controller="controller">
+
+    <div class="container">
+      <input type="text" 
+             ng-sherlock 
+             ng-model="date" 
+             start="startDate" 
+             end="endDate"
+             placeholder="The retreat is from Jan 12 - 29."
+             class="sherlock-input">
+      <br />
+      <div ng-show="startDate">Start: {{startDate | date: 'short'}}</div>
+      <div ng-show="endDate">End: {{endDate | date: 'short'}}</div>
+      <br />
+      <div>
+        <div class="example"><b>Some ideas of events to try...</b></div>
+        <div class="example">February 24 at 3pm - 2pm March 3</div>
+        <div class="example">Vacation is in 4 weeks...</div>
+        <div class="example">Christmas is on December 25th.</div>
+        <div class="example">Homework 5 due next monday at 3pm</div>
+        <div class="example">Let's have lunch on the 3rd.</div>
+        <div class="example">Bake a cake tomorrow.</div>
+      </div>
+    </div>
+    
+    <script src="website/built.js"></script>
+  </body>
+</html>
